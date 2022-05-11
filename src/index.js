@@ -32,7 +32,16 @@ const onClickAdd = () => {
     const backButton = document.createElement("button");
     backButton.textContent = "戻す";
     backButton.addEventListener("click", () => {
-      alert("戻す");
+      //押された戻すボタンの親タグ(li)を未完了リストに追加
+      const backTarget = backButton.parentNode;
+      document.getElementById("incomplete-list").appendChild(backTarget);
+
+      //buttonタグを削除
+      backButton.remove();
+
+      //liタグの子要素に各要素を設定
+      li.appendChild(completeButton);
+      li.appendChild(deleteButton);
     });
 
     //button(戻す)タグをliタグに追加
