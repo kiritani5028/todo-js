@@ -1,3 +1,70 @@
+html {
+  background-color: #333;
+}
+
 body {
   font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button {
+  border-radius: 30px;
+  border: none;
+  padding: 6px 16px;
+  margin-right: 8px;
+}
+
+button:hover {
+  background-color: #25253b;
+  color: #fff;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 30px;
+  border: none;
+  padding: 12px 32px;
+  outline: none;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+.input-area {
+  background-color: #c1ffff;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 16px;
+}
+.incomplete-area {
+  background-color: #c6ffe2;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 16px;
+}
+.complete-area {
+  background-color: #ffffe0;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 16px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+  font-size: 26px;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.todo-title {
+  margin-right: 8px;
 }
